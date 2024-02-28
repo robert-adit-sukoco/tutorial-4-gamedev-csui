@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fishBlue_fall.png-60f08c88e89f77c01c8bf7edee979c98.stex"
+path="res://.import/dead.jpg-9c8064678f556947d1215c6f9bf4cc11.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_platformerpack/PNG/Enemies/fishBlue_fall.png"
-dest_files=[ "res://.import/fishBlue_fall.png-60f08c88e89f77c01c8bf7edee979c98.stex" ]
+source_file="res://dead.jpg"
+dest_files=[ "res://.import/dead.jpg-9c8064678f556947d1215c6f9bf4cc11.stex" ]
 
 [params]
 

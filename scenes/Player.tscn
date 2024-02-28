@@ -71,3 +71,6 @@ frame = 2
 anims/Idle = SubResource( 2 )
 anims/Jump = SubResource( 3 )
 anims/Walk = SubResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true

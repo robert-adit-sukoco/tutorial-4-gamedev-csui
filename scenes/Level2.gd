@@ -19,10 +19,8 @@ func _ready():
 func _on_VictoryArea_body_entered(body):
 	if (body.name == "Player"):
 		get_tree().change_scene("res://scenes/VictoryScreen.tscn")
-	pass # Replace with function body.
 
 
 func _on_FallArea_body_entered(body):
 	if (body.name == "Player"):
 		get_tree().change_scene("res://scenes/GameOverScreen.tscn")
-	pass # Replace with function body.

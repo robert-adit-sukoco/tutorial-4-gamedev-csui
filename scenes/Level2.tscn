@@ -493,5 +493,7 @@ position = Vector2( 101, 254 )
 [node name="Spawner" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1229, -344 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="body_entered" from="VictoryArea" to="." method="_on_VictoryArea_body_entered"]
 [connection signal="body_entered" from="FallArea" to="." method="_on_FallArea_body_entered"]

@@ -1,55 +1,46 @@
 [gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/kenney_platformerpack/Spritesheets/spritesheet_gr_grass.png" type="Texture" id=2]
-[ext_resource path="res://scenes/Level1.gd" type="Script" id=3]
-[ext_resource path="res://assets/Familiar Looking Rocket.png" type="Texture" id=4]
-[ext_resource path="res://scenes/Spawner.tscn" type="PackedScene" id=5]
-
-[sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
-
-[sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
+[ext_resource path="res://assets/kenney_platformerpack/Spritesheets/spritesheet_gr_sand.png" type="Texture" id=1]
+[ext_resource path="res://assets/Familiar Looking Rocket.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Spawner.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Level2.gd" type="Script" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 0, 0, 0, 0, 0, 0, 128, 128, 0, 128 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 128, 128, 0, 128, 128, 0, 128, 0 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PoolVector2Array( 128, 0, 0, 128, 128, 0, 128, 128, 0, 128, 0, 128, 0, 128, 0, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PoolVector2Array( 0, 0, 0, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
-points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 
 [sub_resource type="ConvexPolygonShape2D" id=14]
-points = PoolVector2Array( 128, 128, 0, 64, 0, 0, 128, 0 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=15]
-points = PoolVector2Array( 128, 64, 0, 128, 0, 0, 128, 0 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=16]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -58,53 +49,62 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
-points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="TileSet" id=19]
-0/name = "spritesheet_gr_grass.png 0"
-0/texture = ExtResource( 2 )
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="TileSet" id=1]
+0/name = "spritesheet_gr_sand.png 0"
+0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 128, 128 )
+0/region = Rect2( 128, 0, 128, 128 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 1 )
+0/shape = SubResource( 4 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 1 ),
+"shape": SubResource( 4 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
-1/name = "spritesheet_gr_grass.png 1"
-1/texture = ExtResource( 2 )
+1/name = "spritesheet_gr_sand.png 1"
+1/texture = ExtResource( 1 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 128, 0, 128, 128 )
+1/region = Rect2( 0, 0, 128, 128 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 2 )
+1/shape = SubResource( 5 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 2 ),
+"shape": SubResource( 5 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
-2/name = "spritesheet_gr_grass.png 2"
-2/texture = ExtResource( 2 )
+2/name = "spritesheet_gr_sand.png 2"
+2/texture = ExtResource( 1 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 256, 0, 128, 128 )
@@ -113,19 +113,19 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 11 )
+2/shape = SubResource( 14 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
-3/name = "spritesheet_gr_grass.png 3"
-3/texture = ExtResource( 2 )
+3/name = "spritesheet_gr_sand.png 3"
+3/texture = ExtResource( 1 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 384, 0, 128, 128 )
@@ -134,19 +134,19 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 12 )
+3/shape = SubResource( 15 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 15 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
-4/name = "spritesheet_gr_grass.png 4"
-4/texture = ExtResource( 2 )
+4/name = "spritesheet_gr_sand.png 4"
+4/texture = ExtResource( 1 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 512, 0, 128, 128 )
@@ -155,19 +155,19 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 4/navigation_offset = Vector2( 0, 0 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 13 )
+4/shape = SubResource( 16 )
 4/shape_one_way = false
 4/shape_one_way_margin = 1.0
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 16 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
-5/name = "spritesheet_gr_grass.png 5"
-5/texture = ExtResource( 2 )
+5/name = "spritesheet_gr_sand.png 5"
+5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 640, 0, 128, 128 )
@@ -176,19 +176,19 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 5/navigation_offset = Vector2( 0, 0 )
 5/shape_offset = Vector2( 0, 0 )
 5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape = SubResource( 14 )
+5/shape = SubResource( 17 )
 5/shape_one_way = false
 5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 14 ),
+"shape": SubResource( 17 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
-6/name = "spritesheet_gr_grass.png 6"
-6/texture = ExtResource( 2 )
+6/name = "spritesheet_gr_sand.png 6"
+6/texture = ExtResource( 1 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 768, 0, 128, 128 )
@@ -197,19 +197,19 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 6/navigation_offset = Vector2( 0, 0 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-6/shape = SubResource( 15 )
+6/shape = SubResource( 18 )
 6/shape_one_way = false
 6/shape_one_way_margin = 1.0
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 15 ),
+"shape": SubResource( 18 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 6/z_index = 0
-7/name = "spritesheet_gr_grass.png 7"
-7/texture = ExtResource( 2 )
+7/name = "spritesheet_gr_sand.png 7"
+7/texture = ExtResource( 1 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 896, 0, 128, 128 )
@@ -218,19 +218,19 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 7/navigation_offset = Vector2( 0, 0 )
 7/shape_offset = Vector2( 0, 0 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-7/shape = SubResource( 16 )
+7/shape = SubResource( 19 )
 7/shape_one_way = false
 7/shape_one_way_margin = 1.0
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 16 ),
+"shape": SubResource( 19 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
-8/name = "spritesheet_gr_grass.png 8"
-8/texture = ExtResource( 2 )
+8/name = "spritesheet_gr_sand.png 8"
+8/texture = ExtResource( 1 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 1024, 0, 128, 128 )
@@ -239,103 +239,103 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 8/navigation_offset = Vector2( 0, 0 )
 8/shape_offset = Vector2( 0, 0 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-8/shape = SubResource( 17 )
+8/shape = SubResource( 20 )
 8/shape_one_way = false
 8/shape_one_way_margin = 1.0
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 17 ),
+"shape": SubResource( 20 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
-9/name = "spritesheet_gr_grass.png 9"
-9/texture = ExtResource( 2 )
+9/name = "spritesheet_gr_sand.png 9"
+9/texture = ExtResource( 1 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
-9/region = Rect2( 0, 128, 128, 96 )
+9/region = Rect2( 1024, 128, 128, 128 )
 9/tile_mode = 0
 9/occluder_offset = Vector2( 0, 0 )
 9/navigation_offset = Vector2( 0, 0 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-9/shape = SubResource( 18 )
+9/shape = SubResource( 21 )
 9/shape_one_way = false
 9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 18 ),
+"shape": SubResource( 21 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
-10/name = "spritesheet_gr_grass.png 10"
-10/texture = ExtResource( 2 )
+10/name = "spritesheet_gr_sand.png 10"
+10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
-10/region = Rect2( 128, 128, 128, 96 )
+10/region = Rect2( 896, 128, 128, 128 )
 10/tile_mode = 0
 10/occluder_offset = Vector2( 0, 0 )
 10/navigation_offset = Vector2( 0, 0 )
 10/shape_offset = Vector2( 0, 0 )
 10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape = SubResource( 3 )
+10/shape = SubResource( 6 )
 10/shape_one_way = false
 10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 6 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 10/z_index = 0
-11/name = "spritesheet_gr_grass.png 11"
-11/texture = ExtResource( 2 )
+11/name = "spritesheet_gr_sand.png 11"
+11/texture = ExtResource( 1 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
-11/region = Rect2( 256, 128, 128, 96 )
+11/region = Rect2( 768, 128, 128, 128 )
 11/tile_mode = 0
 11/occluder_offset = Vector2( 0, 0 )
 11/navigation_offset = Vector2( 0, 0 )
 11/shape_offset = Vector2( 0, 0 )
 11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-11/shape = SubResource( 4 )
+11/shape = SubResource( 7 )
 11/shape_one_way = false
 11/shape_one_way_margin = 1.0
 11/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 7 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 11/z_index = 0
-12/name = "spritesheet_gr_grass.png 12"
-12/texture = ExtResource( 2 )
+12/name = "spritesheet_gr_sand.png 12"
+12/texture = ExtResource( 1 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
-12/region = Rect2( 384, 128, 128, 96 )
+12/region = Rect2( 640, 128, 128, 128 )
 12/tile_mode = 0
 12/occluder_offset = Vector2( 0, 0 )
 12/navigation_offset = Vector2( 0, 0 )
 12/shape_offset = Vector2( 0, 0 )
 12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-12/shape = SubResource( 5 )
+12/shape = SubResource( 8 )
 12/shape_one_way = false
 12/shape_one_way_margin = 1.0
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 8 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 12/z_index = 0
-13/name = "spritesheet_gr_grass.png 13"
-13/texture = ExtResource( 2 )
+13/name = "spritesheet_gr_sand.png 13"
+13/texture = ExtResource( 1 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 512, 128, 128, 128 )
@@ -344,200 +344,154 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 0, 96 )
 13/navigation_offset = Vector2( 0, 0 )
 13/shape_offset = Vector2( 0, 0 )
 13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-13/shape = SubResource( 6 )
+13/shape = SubResource( 9 )
 13/shape_one_way = false
 13/shape_one_way_margin = 1.0
 13/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 6 ),
+"shape": SubResource( 9 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 13/z_index = 0
-14/name = "spritesheet_gr_grass.png 14"
-14/texture = ExtResource( 2 )
+14/name = "spritesheet_gr_sand.png 14"
+14/texture = ExtResource( 1 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
-14/region = Rect2( 640, 128, 128, 128 )
+14/region = Rect2( 0, 128, 128, 96 )
 14/tile_mode = 0
 14/occluder_offset = Vector2( 0, 0 )
 14/navigation_offset = Vector2( 0, 0 )
 14/shape_offset = Vector2( 0, 0 )
 14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-14/shape = SubResource( 7 )
+14/shape = SubResource( 10 )
 14/shape_one_way = false
 14/shape_one_way_margin = 1.0
 14/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 10 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 14/z_index = 0
-15/name = "spritesheet_gr_grass.png 15"
-15/texture = ExtResource( 2 )
+15/name = "spritesheet_gr_sand.png 15"
+15/texture = ExtResource( 1 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
-15/region = Rect2( 768, 128, 128, 128 )
+15/region = Rect2( 128, 128, 128, 96 )
 15/tile_mode = 0
 15/occluder_offset = Vector2( 0, 0 )
 15/navigation_offset = Vector2( 0, 0 )
 15/shape_offset = Vector2( 0, 0 )
 15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-15/shape = SubResource( 8 )
+15/shape = SubResource( 11 )
 15/shape_one_way = false
 15/shape_one_way_margin = 1.0
 15/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 8 ),
+"shape": SubResource( 11 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 15/z_index = 0
-16/name = "spritesheet_gr_grass.png 16"
-16/texture = ExtResource( 2 )
+16/name = "spritesheet_gr_sand.png 16"
+16/texture = ExtResource( 1 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
-16/region = Rect2( 896, 128, 128, 128 )
+16/region = Rect2( 256, 128, 128, 96 )
 16/tile_mode = 0
 16/occluder_offset = Vector2( 0, 0 )
 16/navigation_offset = Vector2( 0, 0 )
 16/shape_offset = Vector2( 0, 0 )
 16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-16/shape = SubResource( 9 )
+16/shape = SubResource( 12 )
 16/shape_one_way = false
 16/shape_one_way_margin = 1.0
 16/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 16/z_index = 0
-17/name = "spritesheet_gr_grass.png 17"
-17/texture = ExtResource( 2 )
+17/name = "spritesheet_gr_sand.png 17"
+17/texture = ExtResource( 1 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
-17/region = Rect2( 64, 64, 32, 32 )
-17/tile_mode = 2
-17/autotile/icon_coordinate = Vector2( 0, 0 )
-17/autotile/tile_size = Vector2( 32, 32 )
-17/autotile/spacing = 0
-17/autotile/occluder_map = [  ]
-17/autotile/navpoly_map = [  ]
-17/autotile/priority_map = [  ]
-17/autotile/z_index_map = [  ]
+17/region = Rect2( 384, 128, 128, 96 )
+17/tile_mode = 0
 17/occluder_offset = Vector2( 0, 0 )
 17/navigation_offset = Vector2( 0, 0 )
 17/shape_offset = Vector2( 0, 0 )
 17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape = SubResource( 13 )
 17/shape_one_way = false
-17/shape_one_way_margin = 0.0
-17/shapes = [  ]
-17/z_index = 0
-18/name = "spritesheet_gr_grass.png 18"
-18/texture = ExtResource( 2 )
-18/tex_offset = Vector2( 0, 0 )
-18/modulate = Color( 1, 1, 1, 1 )
-18/region = Rect2( 1024, 128, 128, 128 )
-18/tile_mode = 0
-18/occluder_offset = Vector2( 0, 0 )
-18/navigation_offset = Vector2( 0, 0 )
-18/shape_offset = Vector2( 0, 0 )
-18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-18/shape = SubResource( 10 )
-18/shape_one_way = false
-18/shape_one_way_margin = 1.0
-18/shapes = [ {
+17/shape_one_way_margin = 1.0
+17/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
-18/z_index = 0
-19/name = "spritesheet_gr_grass.png 19"
-19/texture = ExtResource( 2 )
-19/tex_offset = Vector2( 0, 0 )
-19/modulate = Color( 1, 1, 1, 1 )
-19/region = Rect2( 64, 32, 32, 32 )
-19/tile_mode = 0
-19/occluder_offset = Vector2( 0, 0 )
-19/navigation_offset = Vector2( 0, 0 )
-19/shape_offset = Vector2( 0, 0 )
-19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-19/shape_one_way = false
-19/shape_one_way_margin = 0.0
-19/shapes = [  ]
-19/z_index = 0
+17/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=20]
-extents = Vector2( 187.812, 100.5 )
-
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 150, 242 )
 
-[node name="Level1" type="Node2D"]
-script = ExtResource( 3 )
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 187.812, 100.5 )
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 144, 52 )
-collision_layer = 3
-collision_mask = 3
-speed = 300
+[node name="Level2" type="Node2D"]
+script = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource( 19 )
+tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( -327624, 14, 0, -327622, 16, 0, -327620, 16, 0, -327618, 16, 0, -327616, 16, 0, -327614, 16, 0, -196554, 14, 0, -196552, 8, 0, -196550, 1, 0, -196548, 1, 0, -196546, 1, 0, -196544, 1, 0, -196542, 1, 0, -65516, 14, 0, -65514, 16, 0, -65512, 11, 0, -65510, 11, 0, -65508, 6, 0, -65504, 5, 0, -65502, 6, 0, -65498, 5, 0, -65496, 6, 0, -65492, 15, 0, -65490, 16, 0, -65488, 16, 0, -65486, 16, 0, -65484, 16, 0, -65482, 8, 0, -65480, 1, 0, -65478, 1, 0, -65476, 1, 0, -65474, 1, 0, -65472, 1, 0, -65470, 1, 0, 24, 1, 0, 26, 1, 0, 65554, 14, 0, 65556, 8, 0, 65558, 1, 0, 131096, 1, 0, 131098, 1, 0, 196609, 10, 0, 196611, 11, 0, 196613, 11, 0, 196615, 11, 0, 196617, 12, 0, 196621, 15, 0, 196623, 16, 0, 196624, 16, 0, 196626, 8, 0, 196628, 1, 0, 196630, 1, 0, 262145, 1, 0, 262147, 1, 0, 262149, 1, 0, 262151, 1, 0, 262153, 1, 0, 262157, 1, 0, 262168, 1, 0, 262170, 1, 0, 327695, 1, 0, 327697, 1, 0, 327699, 1, 0, 327700, 1, 0, 327701, 1, 0, 327702, 1, 0, 393217, 1, 0, 393219, 1, 0, 393221, 1, 0, 393223, 1, 0, 393225, 1, 0, 393229, 1, 0, 393233, 1, 0, 393238, 1, 0, 393240, 1, 0, 393241, 1, 0, 393242, 1, 0, 458767, 1, 0, 458769, 1, 0, 458771, 1, 0, 458772, 1, 0, 458773, 1, 0, 458774, 1, 0, 458777, 1, 0, 458778, 1, 0, 524289, 1, 0, 524291, 1, 0, 524293, 1, 0, 524295, 1, 0, 524297, 1, 0, 524301, 1, 0, 524305, 1, 0, 524307, 1, 0, 524312, 1, 0, 524313, 1, 0, 589839, 1, 0, 589841, 1, 0, 589843, 1, 0, 589844, 1, 0, 589845, 1, 0, 589846, 1, 0, 589848, 1, 0, 589849, 1, 0, 589850, 1, 0, 655361, 1, 0, 655363, 1, 0, 655365, 1, 0, 655367, 1, 0, 655369, 1, 0, 655373, 1, 0, 655375, 1, 0, 655377, 1, 0, 655379, 1, 0, 655380, 1, 0, 655381, 1, 0, 655382, 1, 0, 655384, 1, 0, 655386, 1, 0, 851960, 5, 0, 851962, 6, 0 )
+tile_data = PoolIntArray( 196636, 12, 0, 196638, 10, 0, 196640, 10, 0, 196642, 10, 0, 196644, 10, 0, 327680, 11, 0, 327682, 10, 0, 327684, 10, 0, 327686, 10, 0, 327688, 10, 0, 327690, 10, 0, 327692, 10, 0, 327694, 10, 0, 327696, 10, 0, 327700, 10, 0, 327702, 10, 0, 327704, 10, 0, 327706, 10, 0, 327708, 8, 0, 327710, 0, 0, 327712, 0, 0, 327714, 0, 0, 327716, 0, 0 )
+
+[node name="VictoryArea" type="Area2D" parent="."]
+position = Vector2( 2260, -52 )
+
+[node name="Sprite" type="Sprite" parent="VictoryArea"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VictoryArea"]
+position = Vector2( 1, 1 )
+shape = SubResource( 2 )
 
 [node name="FallArea" type="Area2D" parent="."]
 position = Vector2( 776, 482 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( 0, 1 )
-shape = SubResource( 20 )
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( 1199, -361 )
-shape = SubResource( 20 )
+position = Vector2( 442, 34 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( 1599, -366 )
-shape = SubResource( 20 )
+position = Vector2( 1858, -206 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( 2003, -364 )
-shape = SubResource( 20 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( -865, 397 )
-shape = SubResource( 20 )
+position = Vector2( 2246, -196 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( -1471, 397 )
-shape = SubResource( 20 )
+position = Vector2( -952, 50 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="FallArea"]
-position = Vector2( -1856, 399 )
-shape = SubResource( 20 )
+position = Vector2( -1347, 52 )
+shape = SubResource( 3 )
 
-[node name="VictoryArea" type="Area2D" parent="."]
-position = Vector2( 4105, -561 )
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 101, 254 )
 
-[node name="Sprite" type="Sprite" parent="VictoryArea"]
-texture = ExtResource( 4 )
+[node name="Spawner" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1229, -344 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="VictoryArea"]
-position = Vector2( 1, 1 )
-shape = SubResource( 21 )
-
-[node name="Spawner" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1445, -519 )
-
-[connection signal="body_entered" from="FallArea" to="." method="_on_FallArea_body_entered"]
 [connection signal="body_entered" from="VictoryArea" to="." method="_on_VictoryArea_body_entered"]
+[connection signal="body_entered" from="FallArea" to="." method="_on_FallArea_body_entered"]
